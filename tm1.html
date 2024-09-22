@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .task-manager {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        .task-manager h2 {
+            text-align: center;
+        }
+        .form-control {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .form-control input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .add-task {
+            background-color: #007bff;
+            border: none;
+            padding: 10px;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .add-task:hover {
+            background-color: #0056b3;
+        }
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .task-list li {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .clear-tasks {
+            background-color: #dc3545;
+            border: none;
+            padding: 10px;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .clear-tasks:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="task-manager">
+        <h2>Task Manager</h2>
+        <div class="form-control">
+            <input type="text" placeholder="Enter a new task">
+            <button class="add-task">Add Task</button>
+        </div>
+        <h3>Task List:</h3>
+        <ul class="task-list">
+            <li>Task 1</li>
+            <li>Task 2</li>
+        </ul>
+        <button class="clear-tasks">Clear All Tasks</button>
+    </div>
+</body>
+</html>
